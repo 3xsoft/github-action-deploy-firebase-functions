@@ -31,7 +31,7 @@ jobs:
     - name: Check out code
       uses: actions/checkout@master
     - name: Deploy to Firebase
-      uses: 3xsoft/github-actions-deploy-firebase-functions@main
+      uses: 3xsoft/github-action-deploy-firebase-functions@main
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
         TARGET: default
