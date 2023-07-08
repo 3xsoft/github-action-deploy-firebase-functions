@@ -1,6 +1,8 @@
 # Deploy to Firebase Functions With Project Targets!
 
-A GitHub Action to deploy to Firebase Functions that is able to deploy to different projects.  Need to deploy to production on one branch, then to development on another? Specify a 'target' by using the <key, value> set in your `firebaserc` file. For example:
+A GitHub Action to deploy to Firebase Functions that is able to deploy to different projects. Need to deploy to
+production on one branch, then to development on another? Specify a 'target' by using the <key, value> set in
+your `firebaserc` file. For example:
 
 ```
 {
@@ -29,7 +31,7 @@ jobs:
     - name: Check out code
       uses: actions/checkout@master
     - name: Deploy to Firebase
-      uses: chrissank/deploy-firebase-functions@1.0.0
+      uses: 3xsoft/github-actions-deploy-firebase-functions@main
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
         TARGET: default
@@ -37,4 +39,5 @@ jobs:
 
 ## Contribution
 
-I am no longer actively maintaining this code, however, if bugs or issues arise, please make a pull request. Please try to maintain backwards compatibility where possible. 
+I am no longer actively maintaining this code, however, if bugs or issues arise, please make a pull request. Please try
+to maintain backwards compatibility where possible.

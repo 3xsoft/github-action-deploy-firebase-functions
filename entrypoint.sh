@@ -17,7 +17,6 @@ else
 fi
 
 if [ -z "${DEPLOY_ONLY}" ]; then
-    echo "DEPLOY_ONLY is missing"
     DEPLOY_ONLY = "functions"
 fi
 
